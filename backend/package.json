@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Proyecto Restaurant",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "swagger:gen": "node ./config/swagger.js",
+    "dev": "npx nodemon app.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --force-exit"
+  }
+,
+  "keywords": [],
+  "author": "ez",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5",
+    "jsonwebtoken": "^9.0.2",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7"
+  }
+}
